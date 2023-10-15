@@ -7,5 +7,12 @@
 </head>
     <body>
     <!--Add a registration form here -->
+    <form action="{% url 'djangoapp:registration' %}" method="get">
+        <input class="dropbtn"  type="submit" value="Visitor">
+        <div class="dropdown-content">
+            <a href="{% url 'djangoapp:registration' %}">Signup</a>
+            <a href="{% url 'djangoapp:login' %}">Login</a>
+        </div>
+    </form>
     </body>
 </html>
